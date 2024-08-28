@@ -3,6 +3,10 @@ Title: A WYSIWYG Markdown Editor in Shiny
 Version: 0.0.0.9000
 Authors@R: 
     c(
+    person(given = "Juan Cruz",
+           family = "Rodriguez", 
+           role = c("aut"),
+           email = "jcrodriguez@unc.edu.ar"),
     person(given = "Jonathan",
            family = "Trattner",
            role = c("aut", "cre"),
@@ -31,6 +35,6 @@ RoxygenNote: 7.3.1
 Imports:
     glue,
     shiny
-URL: https://github.com/jdtrat/shinymarkdown
-BugReports: https://github.com/jdtrat/shinymarkdown/issues
+URL: https://github.com/jcrodriguez1989/shinymarkdown
+BugReports: https://github.com/jcrodriguez1989/shinymarkdown/issues
 License: MIT + file LICENSE

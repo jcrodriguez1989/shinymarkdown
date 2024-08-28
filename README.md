@@ -131,7 +131,7 @@ shinyApp(ui, server)
 
 ## Feedback
 
-If you want to see a feature, or report a bug, please [file an issue](https://github.com/jdtrat/shinymarkdown/issues) or open a [pull-request](https://github.com/jdtrat/shinymarkdown/pulls)! As this package is just getting off the ground, we welcome all feedback and contributions. See our [contribution guidelines](.github/CONTRIBUTING.md) for more details on getting involved!
+If you want to see a feature, or report a bug, please [file an issue](https://github.com/jcrodriguez1989/shinymarkdown/issues) or open a [pull-request](https://github.com/jcrodriguez1989/shinymarkdown/pulls)! As this package is just getting off the ground, we welcome all feedback and contributions. See our [contribution guidelines](.github/CONTRIBUTING.md) for more details on getting involved!
 
 ## Code of Conduct
 

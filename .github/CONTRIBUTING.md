@@ -1,6 +1,6 @@
 # Contributing to shinymarkdown
 
-Howdy :wave:! Thanks for your interest in making {shinymarkdown} better! The guidelines below outline how to propose a change to shinymarkdown. They are based on (i.e. the same as) the `tidyverse` contribution guidelines. If you have any additional questions, please [open an issue](https://github.com/jdtrat/shinymarkdown/issues) or send me a [message on Twitter](https://twitter.com/jdtrat).
+Howdy :wave:! Thanks for your interest in making {shinymarkdown} better! The guidelines below outline how to propose a change to shinymarkdown. They are based on (i.e. the same as) the `tidyverse` contribution guidelines. If you have any additional questions, please [open an issue](https://github.com/jcrodriguez1989/shinymarkdown/issues) or send me a [message on Twitter](https://twitter.com/jdtrat).
 
 ## Fixing typos
 
@@ -8,7 +8,7 @@ You can fix typos, spelling mistakes, or grammatical errors in the documentation
 
 ## Bigger changes
 
-If you want to make a bigger change, it's a good idea to first file an [issue](https://github.com/jdtrat/shinymarkdown/issues). If you've found a bug, please file an issue that illustrates the bug with a minimal [reprex](https://reprex.tidyverse.org) (this will also help you write a unit test, if needed).
+If you want to make a bigger change, it's a good idea to first file an [issue](https://github.com/jcrodriguez1989/shinymarkdown/issues). If you've found a bug, please file an issue that illustrates the bug with a minimal [reprex](https://reprex.tidyverse.org) (this will also help you write a unit test, if needed).
 
 ### Pull request process
 

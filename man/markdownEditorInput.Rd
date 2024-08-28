@@ -4,10 +4,34 @@
 \alias{markdownEditorInput}
 \title{Create a Markdown Editor input control}
 \usage{
-markdownEditorInput(inputId)
+markdownEditorInput(
+  inputId,
+  height = "300px",
+  min_height = "200px",
+  initial_value = "",
+  preview_style = "tab",
+  initial_edit_type = "markdown",
+  language = "en-US",
+  placeholder = ""
+)
 }
 \arguments{
 \item{inputId}{The input slot that will be used to access the value.}
+
+\item{height}{Editor's height style value. Height is applied as border-box ex) "300px", "100\%",
+"auto".}
+
+\item{min_height}{Editor's min-height style value in pixel ex) "300px".}
+
+\item{initial_value}{Editor's initial value.}
+
+\item{preview_style}{Markdown editor's preview style ("tab", "vertical").}
+
+\item{initial_edit_type}{Initial editor type ("markdown", "wysiwyg").}
+
+\item{language}{Language.}
+
+\item{placeholder}{The placeholder text of the editable element.}
 }
 \description{
 Create a Markdown Editor input control
