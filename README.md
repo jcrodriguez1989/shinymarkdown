@@ -41,6 +41,7 @@ If you just want to plop in an editor, the following code will work! For customi
 library("shiny")
 library("shinymarkdown")
 ui <- fluidPage(
+  useShinyMarkdownEditor(),
   markdownEditorInput("editor1")
 )
 
@@ -55,6 +56,7 @@ shinyApp(ui, server)
 library("shiny")
 library("shinymarkdown")
 ui <- fluidPage(
+  useShinyMarkdownEditor(),
   markdownEditorInput("editor1", height = "300px")
 )
 
