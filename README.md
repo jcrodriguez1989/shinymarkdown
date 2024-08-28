@@ -35,13 +35,13 @@ devtools::install_github("jcrodriguez1989/shinymarkdown")
 
 ### Basic Usage
 
-If you just want to plop in an editor, the following code will work! For customizing the appearance/functionality of the Editor, please see the [advanced usage](#advanced-usage) section below or the documentation for the `mdInput()` function.
+If you just want to plop in an editor, the following code will work! For customizing the appearance/functionality of the Editor, please see the [editor customization](#editor-customization) section below or the documentation for the `markdownEditorInput()` function.
 
 ``` {.r}
-library(shiny)
-library(shinymarkdown)
+library("shiny")
+library("shinymarkdown")
 ui <- fluidPage(
-  mdInput(inputId = "editor1")
+  markdownEditorInput("editor1")
 )
 
 server <- function(input, output, session) {}
@@ -51,22 +51,17 @@ shinyApp(ui, server)
 
 ### Accessing the Editor's Contents
 
-`mdInput()` is not *exactly* a typical Shiny input. Because we wanted to enable access to both the Markdown and HTML formats of user-input, we forwent the traditional Shiny input-binding. Instead, you can access either the Markdown or HTML versions of the editor's contents by suffixing the `inputId` with "_markdown" or "_html", respectively. For example:
-
 ``` {.r}
-library(shiny)
-library(shinymarkdown)
+library("shiny")
+library("shinymarkdown")
 ui <- fluidPage(
-  mdInput(inputId = "editor1", height = "300px")
+  markdownEditorInput("editor1", height = "300px")
 )
 
 server <- function(input, output, session) {
   
   # Print the Markdown
-  observe({print(input$editor1_markdown)})
-  
-  # Print the HTML
-  observe({print(input$editor1_html)})
+  observe({print(input$editor1)})
   
 }
 
