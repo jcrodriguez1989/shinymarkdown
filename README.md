@@ -92,42 +92,6 @@ shinyApp(ui, server)
 |     `language`      |                                                         Editor language ISO code. Defaults to "en-us".                                                          |
 |   `iniial_value`    |                                 Should the editor have text already present? If so, supply a character string. Default is NULL.                                 |
 
-#### Showing and Hiding the Editor
-
-If you wish to show or hide the editor within your application, you can call the functions `show_editor()` and `hide_editor()`, respectively. They each take the an argument corresponding to the `inputId` of the editor you wish to show/hide. For example, if you have two editors in the same application:
-
-```{.r}
-library(shiny)
-library(shinymarkdown)
-
-ui <- fluidPage(
-  mdInput(inputId = "editor1", height = "300px", hide_mode_switch = F),
-  mdInput(inputId = "editor2", height = "300px", hide_mode_switch = F),
-  actionButton("hide1", "Hide the First Editor"),
-  actionButton("show1", "Show the First Editor"),
-  actionButton("hide2", "Hide the Second Editor"),
-  actionButton("show2", "Show the Second Editor")
-)
-
-server <- function(input, output, session) {
-  
-  # hide the first editor
-  observeEvent(input$hide1, {hide_editor(.id = "editor1")})
-  
-  # show the first editor
-  observeEvent(input$show1, {show_editor(.id = "editor1")})
-  
-  # hide the second editor
-  observeEvent(input$hide2, {hide_editor(.id = "editor2")})
-  
-  # show the second editor
-  observeEvent(input$show2, {show_editor(.id = "editor2")})
-  
-}
-
-shinyApp(ui, server)
-```
-
 
 ## Feedback
 

@@ -39,6 +39,11 @@ markdownEditorInput <- function(inputId, height = "300px", min_height = "200px",
         usageStatistics: false,
         hideModeSwitch: true
       });
+      // Add `updateMarkdownEditorInput` listener.
+      Shiny.addCustomMessageHandler('updateMarkdownEditorInput_{{inputId}}', function(msg) {
+        {{inputId}}.reset();
+        {{inputId}}.insertText(msg);
+      });
     "))
   )
 }
