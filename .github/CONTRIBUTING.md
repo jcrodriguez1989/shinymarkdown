@@ -1,6 +1,6 @@
 # Contributing to shinymarkdown
 
-Howdy :wave:! Thanks for your interest in making {shinymarkdown} better! The guidelines below outline how to propose a change to shinymarkdown. They are based on (i.e. the same as) the `tidyverse` contribution guidelines. If you have any additional questions, please [open an issue](https://github.com/jcrodriguez1989/shinymarkdown/issues) or send me a [message on Twitter](https://twitter.com/jdtrat).
+Howdy :wave:! Thanks for your interest in making {shinymarkdown} better! The guidelines below outline how to propose a change to shinymarkdown. They are based on (i.e. the same as) the `tidyverse` contribution guidelines. If you have any additional questions, please [open an issue](https://github.com/jcrodriguez1989/shinymarkdown/issues) or send me a [message on Twitter](https://twitter.com/CancuCS).
 
 ## Fixing typos
 
@@ -12,7 +12,7 @@ If you want to make a bigger change, it's a good idea to first file an [issue](h
 
 ### Pull request process
 
--   Fork the package and clone onto your computer. If you haven't done this before, we recommend using `usethis::create_from_github("jdtrat/shinymarkdown", fork = TRUE)`.
+-   Fork the package and clone onto your computer. If you haven't done this before, we recommend using `usethis::create_from_github("jcrodriguez1989/shinymarkdown", fork = TRUE)`.
 
 -   Install all development dependencies with `devtools::install_dev_deps()`, and then make sure the package passes R CMD check by running `devtools::check()`. If R CMD check doesn't pass cleanly, it's a good idea to ask for help before continuing.
 

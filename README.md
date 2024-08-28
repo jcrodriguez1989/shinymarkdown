@@ -26,14 +26,12 @@
 You can install the development version of {shinymarkdown} from Github with:
 
 ``` {.r}
-devtools::install_github("jdtrat/shinymarkdown")
+devtools::install_github("jcrodriguez1989/shinymarkdown")
 ```
 
 ## Demos
 
 {shinymarkdown} is still under active development, and its API is likely to change. It is best to use the editor in your browser window (Google Chrome or Safari). Below is an example of {shinymarkdown} with the left panel as the Markdown Editor and the right panel as the (live) HTML preview.
-
-<img src="https://jdtrat.com/packages/shinymarkdown/resources/editor_preview_dev.png" style="border:5px solid black;"/>
 
 ### Basic Usage
 
