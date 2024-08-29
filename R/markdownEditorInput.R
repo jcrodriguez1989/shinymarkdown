@@ -18,15 +18,16 @@
 markdownEditorInput <- function(inputId, height = "300px", min_height = "200px", initial_value = "",
                                 preview_style = "tab", initial_edit_type = "markdown",
                                 language = "en-US", placeholder = "") {
+  sInputId <- sanitize_input_ids(inputId)
   tagList(
     div(id = inputId),
     tags$script(glue(.open = "{{", .close = "}}", "
       // Create the shiny input listener.
       $('#' + '{{inputId}}').on('keyup', function() {
-        Shiny.setInputValue('{{inputId}}', {{inputId}}.getMarkdown());
+        Shiny.setInputValue('{{inputId}}', {{sInputId}}.getMarkdown());
       })
       // Create an instance of the editor.
-      const {{inputId}} = new toastui.Editor({
+      const {{sInputId}} = new toastui.Editor({
         el: document.querySelector('#{{inputId}}'),
         height: '{{height}}',
         minHeight: '{{min_height}}',
@@ -41,8 +42,8 @@ markdownEditorInput <- function(inputId, height = "300px", min_height = "200px",
       });
       // Add `updateMarkdownEditorInput` listener.
       Shiny.addCustomMessageHandler('updateMarkdownEditorInput_{{inputId}}', function(msg) {
-        {{inputId}}.reset();
-        {{inputId}}.insertText(msg);
+        {{sInputId}}.reset();
+        {{sInputId}}.insertText(msg);
       });
     "))
   )
