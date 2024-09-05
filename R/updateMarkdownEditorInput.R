@@ -10,5 +10,5 @@
 #' @export
 #'
 updateMarkdownEditorInput <- function(session = getDefaultReactiveDomain(), inputId, value) {
-  session$sendCustomMessage(paste0("updateMarkdownEditorInput_", inputId), value)
+  session$sendCustomMessage(paste0("updateMarkdownEditorInput_", session$ns(inputId)), value)
 }

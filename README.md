@@ -26,7 +26,7 @@
 You can install the development version of {shinymarkdown} from Github with:
 
 ``` {.r}
-devtools::install_github("jcrodriguez1989/shinymarkdown")
+remotes::install_github("jcrodriguez1989/shinymarkdown")
 ```
 
 ## Demos
