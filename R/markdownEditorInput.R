@@ -44,6 +44,7 @@ markdownEditorInput <- function(inputId, height = "300px", min_height = "200px",
       Shiny.addCustomMessageHandler('updateMarkdownEditorInput_{{inputId}}', function(msg) {
         {{sInputId}}.reset();
         {{sInputId}}.insertText(msg);
+        {{sInputId}}.moveCursorToStart();
       });
     "))
   )
